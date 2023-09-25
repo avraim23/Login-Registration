@@ -1,0 +1,71 @@
+//---------------------------------------------------------------------------
+
+#include <fmx.h>
+#pragma hdrstop
+#include <fstream>
+#include <string>
+#include <vector>
+#include <sstream>
+#include "LoginForm.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.fmx"
+TMyLoginForm *MyLoginForm;
+//---------------------------------------------------------------------------
+__fastcall TMyLoginForm::TMyLoginForm(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+std::vector<std::string> commaString (std::string line)
+{
+	std::vector<std::string> result ;
+	std::stringstream s_stream(line);
+	while(s_stream.good())
+	{
+	   std::string substr ;
+	   getline(s_stream , substr ,',') ;
+	   result.push_back(substr) ;
+	}
+	return result ;
+}
+//---------------------------------------------------------------------------
+void __fastcall TMyLoginForm::LoginButtonClick(TObject *Sender)
+{
+	fstream myfile ;
+	myfile.open("RegisteredUsers.txt",ios::in) ;
+
+	if (myfile.is_open())
+	{
+		std::string line ;
+		while (getline(myfile,line))
+		{
+			std::vector<std::string> parsedLine = commaString(line) ;
+			const char* username = parsedLine.at(2).c_str() ;
+			AnsiString editUsername = UsernameEdit->Text ;
+			const char* usernameString = editUsername.c_str() ;
+
+
+
+
+			if(!std::strcmp( usernameString , username ))
+			{
+
+				const char* password = parsedLine.at(3).c_str() ;
+				AnsiString editPassword = PasswordEdit->Text ;
+				const char* passwordString = editPassword.c_str() ;
+				if (!std::strcmp( passwordString , password ) )
+				{
+					MessageLabel->Text = "Success" ;
+				}
+				else
+				{
+					MessageLabel->Text = "Wrong Password" ;
+				}
+
+			}
+
+		}
+	}
+}
+//---------------------------------------------------------------------------

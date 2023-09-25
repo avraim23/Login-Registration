@@ -1,0 +1,35 @@
+object MyMainForm: TMyMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Main'
+  ClientHeight = 194
+  ClientWidth = 494
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object RegisterButton: TButton
+    StyledSettings = [Style, FontColor]
+    Position.X = 56.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Register'
+    TextSettings.Font.Family = 'Bangers'
+    TextSettings.Font.Size = 36.000000000000000000
+  end
+  object LoginButton: TButton
+    StyledSettings = [Style, FontColor]
+    Position.X = 312.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Login'
+    TextSettings.Font.Family = 'Bangers'
+    TextSettings.Font.Size = 36.000000000000000000
+  end
+end

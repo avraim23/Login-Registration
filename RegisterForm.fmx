@@ -1,0 +1,108 @@
+object MyRegisterationForm: TMyRegisterationForm
+  Left = 0
+  Top = 0
+  Caption = 'Register'
+  ClientHeight = 488
+  ClientWidth = 462
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object AgeEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 184.000000000000000000
+    Position.Y = 107.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object PasswordEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 184.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object NameEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 184.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object UsernamaeEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Position.X = 184.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object RegisterButton: TButton
+    StyledSettings = [Style, FontColor]
+    Position.X = 144.000000000000000000
+    Position.Y = 352.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Register'
+    TextSettings.Font.Family = 'Bangers'
+    TextSettings.Font.Size = 36.000000000000000000
+    OnClick = RegisterButtonClick
+  end
+  object Label1: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 72.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Acme'
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'Name'
+    TabOrder = 5
+  end
+  object Label2: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 72.000000000000000000
+    Position.Y = 107.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Acme'
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'Age'
+    TabOrder = 6
+  end
+  object Label3: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 72.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Acme'
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'Username'
+    TabOrder = 7
+  end
+  object Label4: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 72.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Acme'
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'Password'
+    TabOrder = 8
+  end
+end

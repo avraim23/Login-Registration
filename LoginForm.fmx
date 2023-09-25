@@ -1,0 +1,77 @@
+object MyLoginForm: TMyLoginForm
+  Left = 0
+  Top = 0
+  Caption = 'Login'
+  ClientHeight = 288
+  ClientWidth = 604
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object LoginButton: TButton
+    StyledSettings = [Style, FontColor]
+    Position.X = 216.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Login'
+    TextSettings.Font.Family = 'Bangers'
+    TextSettings.Font.Size = 36.000000000000000000
+    OnClick = LoginButtonClick
+  end
+  object Label1: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 136.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Acme'
+    TextSettings.Font.Size = 22.000000000000000000
+    Text = 'Username'
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 136.000000000000000000
+    Position.Y = 126.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Acme'
+    TextSettings.Font.Size = 22.000000000000000000
+    Text = 'Password'
+    TabOrder = 2
+  end
+  object UsernameEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Position.X = 264.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object PasswordEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 264.000000000000000000
+    Position.Y = 126.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object MessageLabel: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 392.000000000000000000
+    Position.Y = 239.000000000000000000
+    Size.Width = 212.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Luckiest Guy'
+    TextSettings.Font.Size = 20.000000000000000000
+    TabOrder = 5
+  end
+end
